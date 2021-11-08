@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Gestion des salles
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-list-header>
+    SALLE DE REUNION
+  </ion-list-header>
+  <ion-list lines="none">
+    <ion-item style="background-color: aliceblue;" (click)="moveOn('depot-emetteur')" button animated>
+      <ion-icon slot="start" name="add-circle-outline" style="color: #55e5f0"></ion-icon>
+      <ion-label >
+        <h3>Creer salle de reunion</h3>
+      </ion-label>
+    </ion-item>
+    <ion-item style="background-color: aliceblue;" (click)="moveOn('retrait')" button animated>
+      <ion-icon slot="start" name="create" style="color: #55e5f0"></ion-icon>
+      <ion-label >
+        <h3>Modifier salle de reunion</h3>
+      </ion-label>
+    </ion-item>
+    <ion-item style="background-color: aliceblue;" (click)="moveOn('/tabs/transactions')" button animated>
+      <ion-icon slot="start" name="trash" style="color: #55e5f0"></ion-icon>
+      <ion-label >
+        <h3>Supprimer salle de reunion</h3>
+      </ion-label>
+    </ion-item>
+    <ion-item style="background-color: aliceblue;" (click)="moveOn('/tabs/transactions')" button animated>
+      <ion-icon slot="start" name="calendar" style="color:  #55e5f0"></ion-icon>
+      <ion-label >
+        <h3>Prevision reunion</h3>
+      </ion-label>
+    </ion-item>
+      </ion-list>
+</ion-content>
